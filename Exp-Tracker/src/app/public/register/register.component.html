@@ -1,0 +1,26 @@
+<h1 class="text-center">Sign In</h1>
+
+<form [formGroup] = "form" class="form mt-3" (submit)= "submit()">
+    <div class="row">
+        <div class="form-group col-6">
+            <input type="text" formControlName = "first_name" name="first_name" class="form-control" placeholder="First Name">
+        </div>
+        <div class="form-group col-6">
+            <input type="text" formControlName = "last_name" name="last_name" class="form-control" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-12">
+            <input type="email" formControlName = "email" name="email" class="form-control" placeholder="Email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <input type="password" formControlName = "password" name="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group col-6">
+            <input type="password" formControlName = "password_confirmation" name="password_confirmation" class="form-control" placeholder="Password Confirmation">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]= "!form.valid">Register</button>
+</form>
