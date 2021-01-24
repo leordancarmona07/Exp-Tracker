@@ -12,6 +12,7 @@ import { PhoneBillComponent } from './expenses-report/phone-bill/phone-bill.comp
 import { ClothingComponent } from './expenses-report/clothing/clothing.component';
 import { PersonalCareComponent } from './expenses-report/personal-care/personal-care.component';
 import { TransportationComponent } from './expenses-report/transportation/transportation.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 
@@ -32,7 +33,8 @@ import { TransportationComponent } from './expenses-report/transportation/transp
 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MDBBootstrapModule.forRoot()
   ]
 })
 export class SecureModule { }

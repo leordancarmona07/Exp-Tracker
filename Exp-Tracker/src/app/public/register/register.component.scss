@@ -1,0 +1,26 @@
+.card {
+    top: 3rem;
+    width: 26rem;;
+    height: 36rem;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    opacity: 90%;
+}
+
+.card .card-body {
+    color: #454545;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.card .card-body img {
+    margin-left: 8rem;
+}
+
+label {
+    text-align: left;
+}
+
+.md-form .prefix {
+    left: 0.1rem;
+}
+

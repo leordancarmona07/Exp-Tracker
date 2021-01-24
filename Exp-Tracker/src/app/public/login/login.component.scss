@@ -1,4 +1,47 @@
-.form{
-    width: 300px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+  }
+  
+  .login,
+  .image {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../../assets/images/form-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 37.55rem;
+    color: #fff;
+    padding-top: 50px;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+    margin-top: 10rem;
+    text-align: center;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+  }
+  
+  label {
+    text-align: left;
 }
+
+.md-form .prefix {
+    left: 0.1rem;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
