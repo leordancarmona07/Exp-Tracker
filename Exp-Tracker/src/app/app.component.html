@@ -1,15 +1,21 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav  *ngIf = '!loggedIn' class="navbar navbar-dark bg-dark">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a *ngIf = '!loggedIn' routerLink = '' class="nav-link">Home</a>
+            <a routerLink = '' class="nav-link">Home</a>
         </li>
     </ul>
 
     <div class="navbar-nav">
-        <div class="row mr-5" *ngIf = '!loggedIn'>
-            <a routerLink = '/login' class="nav-link mr-3" >Log-in</a>
-            <a routerLink = '/register' class="nav-link ">Register</a>
+        <div class="row mr-5">
+            <a [routerLink] = "'public/login'" class="nav-link mr-3" >Log-in</a>
+            <a [routerLink] = "'public/register'" class="nav-link ">Register</a>
         </div>
+    </div>
+</nav>
+<nav *ngIf = 'loggedIn' class="navbar navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <div class="navbar-nav">
         <a routerLink = '/' class="nav-link" *ngIf = 'loggedIn' (click) = 'logout()'>Log-out</a>
     </div>
 </nav>
