@@ -31,8 +31,8 @@ export class LoginComponent implements OnInit {
       username : formData.email,
       password : formData.password,
       grant_type : 'password',
-      client_id : 8,
-      client_secret : 'MJb2hkx16XqYjFkn2kV0ABWwscflhhyh21ty3Plv',
+      client_id : 2,
+      client_secret : 'OciuzitAv4JKvnK6hFvI8BXzrP9D4vhSVh89L1ef',
       scope : '*'
     };
     this.http.post( 'http://localhost:8000/oauth/token', data).subscribe(

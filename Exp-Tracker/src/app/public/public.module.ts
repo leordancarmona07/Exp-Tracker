@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { PublicRoutingModule } from './public-routing.module';
 
 
@@ -18,6 +19,7 @@ import { PublicRoutingModule } from './public-routing.module';
     HomeComponent,
     LoginComponent,
     RegisterComponent
+    
   ],
   imports: [
     CommonModule,
