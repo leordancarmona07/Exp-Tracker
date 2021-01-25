@@ -8,13 +8,13 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "spec" : false
+          "spec": false
         },
         "@schematics/angular:module": {
-          "spec" : false
+          "spec": false
         },
         "@schematics/angular:service": {
-          "spec" : false
+          "spec": false
         }
       },
       "root": "",
@@ -38,8 +38,8 @@
               "src/styles.scss",
               "node_modules/bootstrap-scss/bootstrap.scss"
             ],
-            "scripts": [ 
-              "node_modules/jquery/dist/jquery.min.js",   
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js"
             ]
           },
@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "Exp-Tracker"
+  "defaultProject": "Exp-Tracker",
+  "cli": {
+    "analytics": false
+  }
 }
