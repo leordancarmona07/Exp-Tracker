@@ -14,7 +14,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   declarations: [
     AppComponent,
     SecureComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
