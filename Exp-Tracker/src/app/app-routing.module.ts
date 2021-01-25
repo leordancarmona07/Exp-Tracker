@@ -3,39 +3,23 @@ import { Routes, RouterModule } from '@angular/router';
 import { PublicComponent } from './public/public.component';
 import { HomeComponent } from './public/home/home.component';
 import { LoginComponent } from './public/login/login.component';
-import { SecureComponent } from './secure/secure.component';
 import { RegisterComponent } from './public/register/register.component';
-import { DashboardComponent } from './secure/dashboard/dashboard.component';
-import { ExpensesComponent } from './secure/expenses/expenses.component';
-import { ExpensesReportComponent } from './secure/expenses-report/expenses-report.component';
-import { ProfileComponent } from './secure/profile/profile.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
-    path : '',
-    component : PublicComponent,
-    children : [
-      { path : '', component : HomeComponent},
-      { path : 'login', component : LoginComponent},
-      { path : 'register', component : RegisterComponent}
-
-
-    ]
+    path : 'public',
+    loadChildren: () => import(`./public/public.module`).then(m => m.PublicModule)
   },
   { 
-    path : 'secure', 
-    component : SecureComponent,
-    children : [
-      { path : 'dashboard', component : DashboardComponent},
-      { path : 'expenses', component : ExpensesComponent},
-      { path : 'expenses-report', component : ExpensesReportComponent},
-      { path : 'profile', component : ProfileComponent}
-    ]
+    path : 'secure',
+    loadChildren: () => import(`./secure/secure.module`).then(m => m.SecureModule)
   },
-];
+  { path : '', redirectTo : 'public', pathMatch : 'full'},
+  { path : '**', component : PageNotFoundComponent}]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

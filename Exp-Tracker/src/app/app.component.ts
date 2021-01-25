@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,9 +11,14 @@ export class AppComponent implements OnInit {
   title = 'Exp-Tracker';
   loggedIn = true;
 
-constructor(){}
+constructor(private route : Router){}
   ngOnInit(){
       this.loggedIn = localStorage.getItem('token') !== null;
+      if (!this.loggedIn) {
+        this.route.navigate(['']);
+      } else {
+        this.route.navigate(['secure']);
+      }
   }
 
   logout(){

@@ -8,11 +8,13 @@ import { PublicModule } from './public/public.module';
 import { RouterModule } from '@angular/router';
 import { SecureComponent } from './secure/secure.component';
 import { SecureModule } from './secure/secure.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SecureComponent
+    SecureComponent,
+    PageNotFoundComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
@@ -22,7 +24,8 @@ import { SecureModule } from './secure/secure.module';
     SecureModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

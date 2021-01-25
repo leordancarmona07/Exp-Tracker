@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     this.http.post( 'http://localhost:8000/oauth/token', data).subscribe(
         (result: any)  => {
           localStorage.setItem('token', result.access_token);
-          this.router.navigate(['/secure']); // CREATE SECURE COMPONENT
+          this.router.navigate(["secure"]); // CREATE SECURE COMPONENT
         },
         error => {
           console.log('error'),
