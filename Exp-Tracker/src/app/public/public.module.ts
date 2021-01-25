@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { PublicComponent } from './public.component';
 import { HomeComponent } from './home/home.component';

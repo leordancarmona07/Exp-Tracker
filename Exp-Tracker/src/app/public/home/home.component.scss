@@ -1,7 +1,7 @@
 .scroll-left {
     height: 50px;	
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.336);
+    background: rgba(0, 0, 0, 0.15);
    }
    .scroll-left p {
     margin: 0;
@@ -42,7 +42,7 @@
        text-align: left;
        margin: auto 0;
        padding-left: 1%;
-       border-left: 10px solid green;
+       border-left: 10px solid lightgreen;
        width: 100%;
    
    }
@@ -60,9 +60,10 @@
        margin-top: 10%;
    }
 
-   .jumbotron{
-       background-color: rgba(0, 0, 0, 0.411);
-   }
+//    .jumbotron{
+//        background-color: rgba(0, 0, 0, 0.411);
+//     background-color: transparent;
+//    }
 
    .about{
        margin: 0 2%;

@@ -10,18 +10,25 @@
 }
 
   .bg-image {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../../assets/image/form-bg.jpg");
+    background-image: url("../../../assets/image/form-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 37.55rem;
+    height: 41rem;
     color: #fff;
     padding-top: 50px;
   }
   
+  .mask {
+    background: linear-gradient(
+                45deg,
+                rgba(29, 236, 197, 0.7),
+                rgba(91, 14, 214, 0.7) 100%
+              );
+  }
   .overlay {
     font-weight: 300;
-    margin-top: 10rem;
+    margin-top: 14rem;
     text-align: center;
   }
   
@@ -30,17 +37,23 @@
   }
 
   .form-heading  {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
+    color: gray;
   }
+  
+  .md-form .prefix {
+    left: 0.1rem;
+}
 
+
+  label {
+    text-align: left;
+  }
+  
   .btn-login {
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
     border-radius: 2rem;
   }
-  
-.md-form .prefix {
-    left: 0.1rem;
-}

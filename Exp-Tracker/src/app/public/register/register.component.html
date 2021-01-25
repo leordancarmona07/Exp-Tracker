@@ -1,17 +1,20 @@
-<div class="container-fluid">
+<div class="container-fluid" style="width: 70rem;">
     <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-            <div class="overlay mx-auto">
-                <h2 class="display-4">Welcome to</h2>
-                <h3>Expenses Tracker!</h3>
+            <div class="mask">
+                <div class="overlay mx-auto">
+                    <h2 class="display-4">Welcome to</h2>
+                    <h3>Expenses Tracker!</h3>
+                </div>
             </div>
         </div>
         <div class="col-md-8 col-lg-6 bg-color">
-            <div class="register d-flex align-items-start py-5">
+            <div class="register d-flex align-items-center py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
-                            <img src="../../../assets/image/logo.png" alt="" height="90px;" width="90px;" class="logo mx-auto d-block">
+                            <img src="../../../assets/image/logo.png" alt="" height="90px;" width="90px;"
+                                class="logo mx-auto d-block">
                             <form [formGroup]="form" (submit)="submit()">
                                 <h3 class="form-heading">Register</h3>
                                 <div class="row">
@@ -55,9 +58,10 @@
                                 </div>
 
                                 <!-- Submit button -->
-                                <button type="submit" mdbBtn color="success" class="btn-block mb-3" [disabled]= "!form.valid" mdbWavesEffect>Sign
+                                <button type="submit" mdbBtn color="success" class="btn-block mb-3"
+                                    [disabled]="!form.valid" mdbWavesEffect>Sign
                                     Up</button>
-                                <div class="text-center">
+                                <div class="text-center text-dark">
                                     <p>Already signed up? <a href="#!">Login</a></p>
                                 </div>
                             </form>
@@ -65,3 +69,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
