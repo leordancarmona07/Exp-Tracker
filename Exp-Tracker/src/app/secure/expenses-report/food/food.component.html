@@ -1,1 +1,21 @@
-<p>food works!</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Expenses Report</li>
+    </ol>
+  </nav>
+  <h2 class="display-6 mt-5">Food</h2>
+  <table class="table table-hover w-75 mt-5">
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of elements">
+        <th scope="row">{{el.date}}</th>
+        <td>{{el.amount}}</td>
+        <td><button type="submit" mdbBtn color="success" mdbWavesEffect>{{el.action}}</button><button type="submit" mdbBtn color="danger" mdbWavesEffect>{{el.newAction}}</button></td>
+        <!-- <td>{{el.newAction}}</td> -->
+      </tr>
+    </tbody>
+  </table>

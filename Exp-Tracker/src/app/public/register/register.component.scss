@@ -1,26 +1,46 @@
-.card {
-    top: 3rem;
-    width: 26rem;;
-    height: 36rem;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    opacity: 90%;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+  }
+  
+  h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
-.card .card-body {
-    color: #454545;
-    font-size: .9rem;
-    font-weight: 400;
-}
+  .bg-image {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../../assets/image/form-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 37.55rem;
+    color: #fff;
+    padding-top: 50px;
+  }
+  
+  .overlay {
+    font-weight: 300;
+    margin-top: 10rem;
+    text-align: center;
+  }
+  
+  .bg-color {
+    background-color: white;
+  }
 
-.card .card-body img {
-    margin-left: 8rem;
-}
+  .form-heading  {
+    margin-top: 1rem;
+    text-align: center;
+  }
 
-label {
-    text-align: left;
-}
-
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+  }
+  
 .md-form .prefix {
     left: 0.1rem;
 }
-
