@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 41rem;
+    height: 120vh;
     color: #fff;
     padding-top: 50px;
   }
@@ -33,6 +33,7 @@
   }
   
   .bg-color {
+    height: 120vh;
     background-color: white;
   }
 
@@ -56,4 +57,8 @@
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
     border-radius: 2rem;
+  }
+
+  .logo{
+    margin-top: 20%;
   }

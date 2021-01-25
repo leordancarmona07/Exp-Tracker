@@ -1,4 +1,4 @@
-<div class="container-fluid" style="width: 70rem;">
+<div class="container-fluid" >
     <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
             <div class="mask">
@@ -13,7 +13,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
-                            <img src="../../../assets/image/logo.png" alt="" height="90px;" width="90px;"
+                            <img src="../../../assets/image/logo.png" class="logo" alt="" height="90px;" width="90px;"
                                 class="logo mx-auto d-block">
                             <form [formGroup]="form" (submit)="submit()">
                                 <h3 class="form-heading">Register</h3>
@@ -62,7 +62,7 @@
                                     [disabled]="!form.valid" mdbWavesEffect>Sign
                                     Up</button>
                                 <div class="text-center text-dark">
-                                    <p>Already signed up? <a href="#!">Login</a></p>
+                                    <p>Already signed up? <a routerLink = "../login">Login</a></p>
                                 </div>
                             </form>
                         </div>

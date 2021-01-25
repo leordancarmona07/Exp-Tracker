@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 41rem;
+    height: 120vh;
     color: #fff;
     padding-top: 50px;
   }
@@ -34,6 +34,7 @@
   }
 
 .bg-color {
+  height: 120vh;
   background-color: white;
 }
 
@@ -56,4 +57,7 @@ label {
 
 .md-form .prefix {
     left: 0.1rem;
+}
+.logo{
+  margin-top: 30%;
 }
