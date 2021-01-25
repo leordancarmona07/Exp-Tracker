@@ -6,7 +6,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExpensesComponent } from './expenses/expenses.component';
 import { ExpensesReportComponent } from './expenses-report/expenses-report.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SecureRoutingModule } from './secure-routing.module';
 
 
