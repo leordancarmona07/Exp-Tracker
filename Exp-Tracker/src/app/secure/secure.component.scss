@@ -1,7 +1,5 @@
-
-  
-  #sidebar-wrapper {
-    min-height: 120vh;
+ #sidebar-wrapper {
+    min-height: 130vh;
     padding-top: 2%;
     margin-left: -15rem;
     -webkit-transition: margin .25s ease-out;
@@ -42,6 +40,6 @@
     }
   }
   .bg-light {
-    background-color: lightyellow!important;
+    background-color: #ffffcc !important;
 }
 #page-content-wrapper{background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);}

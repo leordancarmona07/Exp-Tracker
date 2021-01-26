@@ -1,1 +1,47 @@
-<p>dashboard works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1 mx-5" #container>
+            <mdb-card style="height:90%">
+                <div style="position: relative; height:85%;">
+                    <!-- <div class="col"> -->
+                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
+                    </canvas>
+                    <!-- </div> -->
+                </div>
+            </mdb-card>
+        </div>
+        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1" #container>
+            <mdb-card style="height:90%;">
+                <div style="position: relative; height:85%;">
+                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
+                    </canvas>
+                </div>
+            </mdb-card>
+        </div>
+        <div class="w-100"></div>
+        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1 mx-5" #container>
+            <mdb-card style="height:90%">
+                <div style="position: relative; height:85%;">
+                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
+                    </canvas>
+                </div>
+            </mdb-card>
+        </div>
+        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1" #container>
+            <mdb-card style="height:90%">
+                <div style="position: relative; height:85%;">
+                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
+                    </canvas>
+                </div>
+            </mdb-card>
+        </div>
+    </div>
+</div>

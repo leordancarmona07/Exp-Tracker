@@ -11,6 +11,14 @@ import { TransportationComponent } from './transportation/transportation.compone
 import { WaterBillComponent } from './water-bill/water-bill.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { PageNotFoundComponent } from 'src/app/page-not-found/page-not-found.component';
+import { ElectricityUpdateComponent } from './electricity-bill/electricity-update/electricity-update.component';
+import { ClothingUpdateComponent } from './clothing/clothing-update/clothing-update.component';
+import { FoodUpdateComponent } from './food/food-update/food-update.component';
+import { PersonalCareUpdateComponent } from './personal-care/personal-care-update/personal-care-update.component';
+import { PhoneBillUpdateComponent } from './phone-bill/phone-bill-update/phone-bill-update.component';
+import { SavingsUpdateComponent } from './savings/savings-update/savings-update.component';
+import { TransportationUpdateComponent } from './transportation/transportation-update/transportation-update.component';
+import { WaterBillUpdateComponent } from './water-bill/water-bill-update/water-bill-update.component';
 
 const routes: Routes = [
   {
@@ -25,6 +33,14 @@ const routes: Routes = [
       { path : 'transportation', component : TransportationComponent},
       { path : 'water-bill', component : WaterBillComponent},
       { path : 'profile', component : ProfileComponent},
+      { path : 'clothing/clothing-update', component : ClothingUpdateComponent },
+      { path : 'electricity-bill/electricity-update', component : ElectricityUpdateComponent },
+      { path : 'food/food-update', component : FoodUpdateComponent }, 
+      { path : 'personal-care/personal-care-update', component : PersonalCareUpdateComponent },
+      { path : 'phone-bill/phone-bill-update', component : PhoneBillUpdateComponent },
+      { path : 'savings/savings-update', component : SavingsUpdateComponent },
+      { path : 'transportation/transportation-update', component : TransportationUpdateComponent },
+      { path : 'water-bill/water-bill-update', component : WaterBillUpdateComponent },
       {path: '', redirectTo: 'clothing', pathMatch: 'full'},
       { path: '**', component:  PageNotFoundComponent}
     ]

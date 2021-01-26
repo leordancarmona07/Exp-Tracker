@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 120vh;
+    height: 130vh;
     color: #fff;
     padding-top: 50px;
   }
@@ -28,13 +28,14 @@
   }
   
   .overlay{
-    font-weight: 300;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
     margin-top: 14rem;
     text-align: center;
   }
 
 .bg-color {
-  height: 120vh;
+  height: 130vh;
   background-color: white;
 }
 
