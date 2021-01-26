@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExpensesComponent } from './expenses/expenses.component';
@@ -22,6 +23,8 @@ import { ProfileUpdateComponent } from './profile/profile-update/profile-update.
   imports: [
     CommonModule,
     SecureRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ]
 })

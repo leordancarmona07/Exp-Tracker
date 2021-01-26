@@ -7,8 +7,9 @@
 <table class="table table-hover w-75 mt-5">
     <thead>
         <tr>
-            <th scope="col">{{headElements}}</th><th></th>
-            <mdb-icon fas icon="user-circle" size="5x" style="margin-right: 2rem; margin-top: 0.5rem;"></mdb-icon>
+            <th scope="col">{{headElements}}</th>
+            <th></th>
+            <mdb-icon fas icon="user-circle" size="5x" style="margin-right: 1rem; margin-top: 0.5rem;"></mdb-icon>
         </tr>
     </thead>
     <tbody>
@@ -16,11 +17,8 @@
             <th scope="row">{{el.user}}</th>
             <td>{{el.value}}</td>
             <td>
-                <!-- <button type="submit" mdbBtn color="success" routerLink='../clothing/clothing-update'
-                    mdbWavesEffect>{{el.action}}</button> -->
-                    <mdb-icon fas icon="pencil-alt"  routerLink='../profile/update-profile'></mdb-icon>
+                <mdb-icon fas icon="pencil-alt" routerLink='../profile/update-profile'></mdb-icon>
             </td>
-            <!-- <td>{{el.newAction}}</td> -->
         </tr>
     </tbody>
 </table>
