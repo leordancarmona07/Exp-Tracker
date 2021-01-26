@@ -11,6 +11,14 @@ import { ClothingComponent } from './clothing/clothing.component';
 import { PersonalCareComponent } from './personal-care/personal-care.component';
 import { TransportationComponent } from './transportation/transportation.component';
 import { ExpensesReportRoutingModule } from './expenses-report-routing.module';
+import { ClothingUpdateComponent } from './clothing/clothing-update/clothing-update.component';
+import { ElectricityUpdateComponent } from './electricity-bill/electricity-update/electricity-update.component';
+import { FoodUpdateComponent } from './food/food-update/food-update.component';
+import { PersonalCareUpdateComponent } from './personal-care/personal-care-update/personal-care-update.component';
+import { PhoneBillUpdateComponent } from './phone-bill/phone-bill-update/phone-bill-update.component';
+import { SavingsUpdateComponent } from './savings/savings-update/savings-update.component';
+import { TransportationUpdateComponent } from './transportation/transportation-update/transportation-update.component';
+import { WaterBillUpdateComponent } from './water-bill/water-bill-update/water-bill-update.component';
 
 
 
@@ -24,7 +32,15 @@ import { ExpensesReportRoutingModule } from './expenses-report-routing.module';
     PhoneBillComponent,
     ClothingComponent,
     PersonalCareComponent,
-    TransportationComponent
+    TransportationComponent,
+    ClothingUpdateComponent,
+    ElectricityUpdateComponent,
+    FoodUpdateComponent,
+    PersonalCareUpdateComponent,
+    PhoneBillUpdateComponent,
+    SavingsUpdateComponent,
+    TransportationUpdateComponent,
+    WaterBillUpdateComponent
   ],
   imports: [
     CommonModule,

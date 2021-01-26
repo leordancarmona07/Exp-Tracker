@@ -1,4 +1,9 @@
-<h2 class="display-6 mt-5">Clothing</h2>
+<nav aria-label="breadcrumb" class="mt-3 mx-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Expenses Report / Clothing</li>
+    </ol>
+</nav>
+<h2 class="display-6 text-dark mt-5">Clothing</h2>
 <table class="table table-hover w-75 mt-5">
     <thead>
         <tr>
@@ -9,7 +14,7 @@
         <tr mdbTableCol *ngFor="let el of elements">
             <th scope="row">{{el.date}}</th>
             <td>{{el.amount}}</td>
-            <td><button type="submit" mdbBtn color="success" mdbWavesEffect>{{el.action}}</button><button type="submit"
+            <td><button type="submit" mdbBtn color="success" routerLink = '../clothing/clothing-update' mdbWavesEffect>{{el.action}}</button><button type="submit"
                     mdbBtn color="danger" mdbWavesEffect>{{el.newAction}}</button></td>
             <!-- <td>{{el.newAction}}</td> -->
         </tr>
