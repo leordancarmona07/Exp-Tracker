@@ -1,47 +1,33 @@
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row">
-        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1 mx-5" #container>
-            <mdb-card style="height:90%">
-                <div style="position: relative; height:85%;">
-                    <!-- <div class="col"> -->
-                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
-                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
-                    </canvas>
-                    <!-- </div> -->
-                </div>
-            </mdb-card>
+        <div class="col ml-5">
+            <canvas mdbChart [chartType]="chartType" [datasets]="dailyChartDatasets" [labels]="chartLabels"
+                [colors]="chartColors" [options]="dailyChartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" id="dailyExpensesChart">
+            </canvas>
+            <h6 class="text-dark">Amount : {{dailyExpensesAmount}}</h6> 
         </div>
-        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1" #container>
-            <mdb-card style="height:90%;">
-                <div style="position: relative; height:85%;">
-                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
-                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
-                    </canvas>
-                </div>
-            </mdb-card>
+        <div class="col">
+            <canvas mdbChart [chartType]="chartType" [datasets]="weeklyChartDatasets" [labels]="chartLabels"
+                [colors]="chartColors" [options]="weeklyChartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" id="weeklyExpensesChart">
+            </canvas>
+           <h6 class="text-dark">Amount : {{dailyExpensesAmount}}</h6> 
         </div>
         <div class="w-100"></div>
-        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1 mx-5" #container>
-            <mdb-card style="height:90%">
-                <div style="position: relative; height:85%;">
-                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
-                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
-                    </canvas>
-                </div>
-            </mdb-card>
+        <div class="col ml-5">
+            <canvas mdbChart [chartType]="chartType" [datasets]="monthlyChartDatasets" [labels]="chartLabels"
+                [colors]="chartColors" [options]="monthlyChartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" id="monthlyExpensesChart">
+            </canvas>
+            <h6 class="text-dark">Amount : {{dailyExpensesAmount}}</h6> 
         </div>
-        <div style="height:380px" class="right-col col-md-5 pr-0 pl-1" #container>
-            <mdb-card style="height:90%">
-                <div style="position: relative; height:85%;">
-                    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
-                        [colors]="chartColors" [options]="chartOptions" [legend]="true"
-                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" height="200">
-                    </canvas>
-                </div>
-            </mdb-card>
+        <div class="col ">
+            <canvas mdbChart [chartType]="chartType" [datasets]="yearlyChartDatasets" [labels]="chartLabels"
+                [colors]="chartColors" [options]="yearlyChartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" id="yearlyExpensesChart">
+            </canvas>
+            <h6 class="text-dark">Amount : {{dailyExpensesAmount}}</h6> 
         </div>
     </div>
 </div>

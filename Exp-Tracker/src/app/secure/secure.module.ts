@@ -7,6 +7,7 @@ import { ExpensesComponent } from './expenses/expenses.component';
 import { ExpensesReportComponent } from './expenses-report/expenses-report.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SecureRoutingModule } from './secure-routing.module';
+import { ProfileUpdateComponent } from './profile/profile-update/profile-update.component';
 
 
 
@@ -15,7 +16,8 @@ import { SecureRoutingModule } from './secure-routing.module';
     DashboardComponent,
     ExpensesComponent,
     ExpensesReportComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProfileUpdateComponent
   ],
   imports: [
     CommonModule,
