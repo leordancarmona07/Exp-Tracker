@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  elements: any = [
+    // { user: 'Photo:', value: '', action: ''},
+    { user: 'Name:', value: 'Eva Rain Ramirez'},
+    { user: 'Username:', value: 'Eva Rain Ramirez'},
+    { user: 'Password:', value: '******'}
+  ];
+  
+  
+  headElements = 'Photo';
 
   constructor() { }
 
