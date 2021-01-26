@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExpenseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UserController::class, 'index']);
 // this return requested user
 Route::get('/user',[ UserController::class, 'user'])->middleware('auth:api');
+
+Route::post('/login',[ UserController::class, 'login']);
 // This add user
 Route::post('/register',[ UserController::class, 'register']);
 // This gets specific user's detail
@@ -28,6 +31,6 @@ Route::put('/updateUser/{id}',[ UserController::class, 'updateUser']);
 //This for deleting user
 Route::delete('/deleteUser/{id}',[ UserController::class, 'deleteUser']);
 
-
+Route::post('/addExpense',[ ExpenseController::class, 'addExpense']);
 
 

@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { PublicRoutingModule } from './public-routing.module';
+// import { DataService } from '../services/data.service';
+import { ExpenseService } from '../services/expense.service';
 
 
 
@@ -26,7 +28,9 @@ import { PublicRoutingModule } from './public-routing.module';
     PublicRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    // DataService,
+    // ExpenseService,
   ]
 })
 export class PublicModule {  }

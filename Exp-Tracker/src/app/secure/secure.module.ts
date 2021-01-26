@@ -7,6 +7,7 @@ import { ExpensesComponent } from './expenses/expenses.component';
 import { ExpensesReportComponent } from './expenses-report/expenses-report.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SecureRoutingModule } from './secure-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,6 +21,7 @@ import { SecureRoutingModule } from './secure-routing.module';
   imports: [
     CommonModule,
     SecureRoutingModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ]
 })

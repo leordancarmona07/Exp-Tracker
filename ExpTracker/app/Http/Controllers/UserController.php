@@ -20,12 +20,15 @@ class UserController extends Controller
     }
 
     // This is to get specific User detail Using ID
-    public function getUserById($id) {
-        $user = User::find($id);
+    public function login(Request $request) {
+        // dd("here", $request);
+        // $user = User::with('expenses')->get()->where('email', $request->email);
+        $user = User::where('email',$request->email)->get();
+        // dd("here", $user);
         if(is_null($user)) {
             return response()->json(['message' => 'User Not Found'], 404);
         }
-        return response()->json($user::find($id), 200);
+        return response()->json($user, 200);
     }
 
     // This is to add user

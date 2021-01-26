@@ -9,12 +9,15 @@ import { RouterModule } from '@angular/router';
 import { SecureComponent } from './secure/secure.component';
 import { SecureModule } from './secure/secure.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdminComponent } from './admin/admin.component';
+import { ExpenseService } from './services/expense.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SecureComponent,
     PageNotFoundComponent,
+    AdminComponent,
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
@@ -27,7 +30,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    ExpenseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
