@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpenseService } from 'src/app/services/expense.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { SecureComponent } from '../secure.component';
+import { FormControl ,FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Expenses } from '../../models'; //Person Interface
 
 @Component({
   selector: 'app-expenses',
@@ -10,31 +10,26 @@ import { SecureComponent } from '../secure.component';
 })
 export class ExpensesComponent implements OnInit {
   
-  form : FormGroup;
-  expense: any;
-  userData: any;
-  constructor(private expenseService: ExpenseService, private fb: FormBuilder, private secure: SecureComponent) {
-    
-  }
-  async ngOnInit() {
-    this.form = await this.fb.group({
-      expense_type: "",
-        expense_amount: "",
-        expense_date: "",
-        note: "",
-        user_id: this.secure.user.id
-    })
+  expensesForm : FormGroup;
 
-    this.userData = this.secure.user;
-    
+  constructor(private fb : FormBuilder,
+    private http : HttpClient
+    ) { }
+
+  ngOnInit(): void {
+    this.expensesForm = this.fb.group({
+      category : ['', Validators.required],
+      amount : ['', Validators.required],
+      date : ['', Validators.required]
+
+    });
   }
 
-  addExpense(formData:any) {
-    console.log(formData);
-    
-    this.expenseService.addExpense(formData.value).subscribe(res=>{
-      console.log(res);
-    })
-  }
+  test:Expenses[] = [{category: 'word1', amount: 10, date: '1/22/21'}, {category: 'word2', amount: 10, date: '1/22/21'}, {category: 'word3', amount: 10, date: '1/22/21'}, {category: '', amount: 10, date: '1/22/21'}];
 
+  add() {
+    this.test.push(this.expensesForm.value);
+    console.log(this.test,"okay")
+    
+  }
 }

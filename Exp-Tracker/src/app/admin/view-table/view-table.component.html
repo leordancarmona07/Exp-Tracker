@@ -1,0 +1,31 @@
+<div class="container mt-1">
+    <h2 class="display-6 text-dark mt-5">User Management</h2>
+    <table class="table table-hover w-75 mt-5">
+      <thead>
+        <tr>
+          <th *ngFor="let head of headElements" scope="col">{{ head }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr mdbTableCol *ngFor="let el of elements">
+          <th scope="row">{{ el.userId }}</th>
+          <td>{{ el.first_name }}</td>
+          <td>{{ el.last_name }}</td>
+          <td>{{ el.email }}</td>
+          <td>
+            <button
+              type="submit"
+              mdbBtn
+              color="success"
+              routerLink="/admin/viewUser"
+              mdbWavesEffect
+            >
+              {{ el.action }}</button
+            ><button type="submit" mdbBtn color="danger" mdbWavesEffect>
+              {{ el.newAction }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -19,6 +19,7 @@ import { PhoneBillUpdateComponent } from './phone-bill/phone-bill-update/phone-b
 import { SavingsUpdateComponent } from './savings/savings-update/savings-update.component';
 import { TransportationUpdateComponent } from './transportation/transportation-update/transportation-update.component';
 import { WaterBillUpdateComponent } from './water-bill/water-bill-update/water-bill-update.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -45,7 +46,8 @@ import { WaterBillUpdateComponent } from './water-bill/water-bill-update/water-b
   imports: [
     CommonModule,
     ExpensesReportRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    HttpClientModule
   ]
 })
 export class ExpensesReportModule { }

@@ -36,12 +36,11 @@ export class LoginComponent implements OnInit {
       scope : '*'
     };
     this.http.post( 'http://localhost:8000/oauth/token', data).subscribe(
-      // this.http.post( 'http://localhost:8000/login', data).subscribe(
         (result: any)  => {
           console.log(result);
           
           localStorage.setItem('token', result.access_token);
-          this.router.navigate(["secure"]); // CREATE SECURE COMPONENT
+          this.router.navigate(["secure"]);
         },
         error => {
           console.log('error'),

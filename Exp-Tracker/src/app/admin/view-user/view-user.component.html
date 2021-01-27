@@ -1,0 +1,13 @@
+<!-- <button type="submit" class="btn btn-success mt-3" mdbWavesEffect routerLink='../admin'>SAVE</button> -->
+<div style="display: block">
+    <canvas mdbChart
+        [chartType]="chartType"
+        [datasets]="chartDatasets"
+        [labels]="chartLabels"
+        [colors]="chartColors"
+        [options]="chartOptions"
+        [legend]="true"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)" class="mx-auto">
+    </canvas>
+  </div>
